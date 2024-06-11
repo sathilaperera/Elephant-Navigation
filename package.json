@@ -1,4 +1,5 @@
 {
+  "homepage": "https://sathilaperera.github.io/Elephant-Navigation",
   "name": "traccar",
   "version": "6.1.0",
   "type": "module",
@@ -43,6 +44,8 @@
   },
   "scripts": {
     "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "generate-pwa-assets": "pwa-assets-generator --preset minimal public/logo.svg",
